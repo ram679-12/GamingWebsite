@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROBE GAMING (@probegaming759) | Next-Gen Ultimate Esports Portal & Probe GPT-4o AI</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Official website for Probe gaming (@probegaming759). Real 425 live subscribers, 416 videos, 102k+ views, Probe GPT-4o Voice AI, 3D Mythic Crate Opener, Armory Recoil Simulator, and Aim Reflex Arena.">
+  <meta name="keywords" content="Probe gaming, @probegaming759, BGMI, Esports, Gaming Portal, Probe GPT-4o, Aim Trainer, Crate Simulator, Recoil Lab">
+  <meta name="author" content="Probe gaming">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Three.js 3D WebGL Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <h1>PROBE GAMING</h1>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p class="loader-subtext">INITIALIZING 425 SUBSCRIBERS & PROBE GPT-4o OMNI...</p>
+  </div>
+
+  <!-- CUSTOM GLOW CURSOR -->
+  <div class="cursor"></div>
+
+  <!-- TOP SCROLL PROGRESS BAR -->
+  <div id="progress"></div>
+
+  <!-- FLOATING GLOW PARTICLES -->
+  <div id="particles"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#home" class="logo">
+      <div class="logo-badge">
+        <i class="fa-solid fa-crosshairs"></i>
+      </div>
+      <div><span>PROBE</span> GAMING</div>
+    </a>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#probe-ai">AI Bot</a></li>
+      <li><a href="#crate-section">Crate</a></li>
+      <li><a href="#armory-section">Armory</a></li>
+      <li><a href="#aim-section">Aim Lab</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#tournament">Tournament</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="audio-toggle" class="audio-toggle-btn" title="Toggle Futuristic Cyber BGM & Audio">
+        <i class="fa-solid fa-volume-xmark"></i> AUDIO
+      </button>
+
+      <a href="http://www.youtube.com/@probegaming759" target="_blank" rel="noreferrer" class="nav-btn subscribe-trigger">
+        <i class="fa-brands fa-youtube"></i> Subscribe 425
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h4><i class="fa-solid fa-bolt" style="color:var(--cyan)"></i> WELCOME TO NEXT-GEN ESPORTS</h4>
+      <h1>PROBE GAMING</h1>
+      <h2><span id="typing"></span><span class="typing-cursor"></span></h2>
+      <p>
+        Experience cinematic BGMI gameplay, tournament-grade clutches, esports scrims passes, voice-powered AI coaching, and verified competitive armory guides.
+      </p>
+
+      <div class="buttons">
+        <a href="#videos" class="btn primary">
+          <i class="fa-solid fa-play"></i> Watch Videos
+        </a>
+        <a href="#probe-ai" class="btn secondary">
+          <i class="fa-solid fa-brain" style="color:var(--cyan)"></i> Probe AI Bot
+        </a>
+        <a href="http://www.youtube.com/@probegaming759" target="_blank" rel="noreferrer" class="btn secondary subscribe-trigger">
+          <i class="fa-brands fa-youtube" style="color:#ff0055"></i> YouTube Channel
+        </a>
+      </div>
+
+      <!-- OFFICIAL VERIFIED STATS COUNTERS -->
+      <div class="stats">
+        <div class="stat">
+          <h2 id="subs" class="subs-glow">425</h2>
+          <p>Subscribers</p>
+        </div>
+        <div class="stat">
+          <h2 id="views">102,129</h2>
+          <p>Total Views</p>
+        </div>
+        <div class="stat">
+          <h2 id="videos-stat">416</h2>
+          <p>Videos</p>
+        </div>
+        <div class="stat">
+          <h2 id="watching" style="color:var(--emerald)">420+</h2>
+          <p>Watching</p>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE MILESTONE PROGRESS BAR -->
+      <div class="milestone-container">
+        <div class="milestone-header">
+          <span style="display:flex; align-items:center; gap:6px;">
+            <i class="fa-solid fa-flag-checkered" style="color:var(--cyan)"></i>
+            <strong>ROAD TO 500 SUBSCRIBERS</strong>
+          </span>
+          <span id="milestone-text">425 / 500 Subscribers (85% Completed)</span>
+        </div>
+        <div class="milestone-track">
+          <div id="milestone-fill" class="milestone-fill"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono)">Next Target: 500 Milestone Special Montage</span>
+          <button id="celebrate-sub-btn" class="btn primary" style="padding:6px 16px; font-size:0.75rem;">
+            <i class="fa-solid fa-gift"></i> Celebrate +1 Sub (Confetti)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D BGMI INTERACTIVE HOLOGRAPHIC SHOWCASE -->
+    <div class="hero-3d-showcase">
+      <div class="hero-3d-header">
+        <span class="hero-3d-badge"><i class="fa-solid fa-cube"></i> 3D BGMI GEAR HOLOGRAM</span>
+        <div class="hero-3d-controls">
+          <button id="hero-wireframe-btn" class="icon-toggle-btn" title="Toggle Wireframe Mesh"><i class="fa-solid fa-border-all"></i></button>
+          <button id="hero-reset-cam-btn" class="icon-toggle-btn" title="Reset 3D Angle"><i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+      </div>
+
+      <div class="hero-3d-viewport" id="hero-3d-viewport" title="Drag with mouse or finger to rotate 360°!">
+        <canvas id="hero-3d-canvas"></canvas>
+        <div class="hero-3d-hint"><i class="fa-solid fa-arrows-spin"></i> DRAG 360° • SWITCH GEAR</div>
+      </div>
+
+      <!-- 3D Model Selector Switcher -->
+      <div class="hero-3d-selectors">
+        <button class="hero-model-pill active" data-model="helmet">
+          <i class="fa-solid fa-helmet-safety"></i> Lvl 3 Helmet
+        </button>
+        <button class="hero-model-pill" data-model="pan">
+          <i class="fa-solid fa-shield"></i> Golden Pan
+        </button>
+        <button class="hero-model-pill" data-model="airdrop">
+          <i class="fa-solid fa-box-open"></i> Air Drop
+        </button>
+        <button class="hero-model-pill" data-model="m416">
+          <i class="fa-solid fa-crosshairs"></i> Glacier M416
+        </button>
+      </div>
+
+      <div class="hero-3d-footer">
+        <div>
+          <strong id="hero-model-title" style="color:#fff; font-family:var(--font-display); font-size:0.95rem;">Level 3 Spetsnaz Helmet</strong>
+          <p id="hero-model-desc" style="font-size:0.75rem; color:var(--text-dim); margin:0;">55% damage reduction • Titanium visor</p>
+        </div>
+        <button id="quick-clutch-video-btn" class="btn primary" style="padding:8px 14px; font-size:0.75rem;">
+          <i class="fa-solid fa-play"></i> Watch Clutch
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ADVANCED PROBE GPT-4o VOICE & INTELLIGENCE LAB
+       ======================================================================== -->
+  <section id="probe-ai">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-sparkles"></i> MULTIMODAL NEURAL GATEWAY</span>
+      <h1 class="title">PROBE GPT-4o VOICE AI</h1>
+      <p class="section-desc">Real-time gaming companion equipped with live weather feeds, Wikipedia knowledge, math solver, and BGMI tactical coaching.</p>
+    </div>
+
+    <div class="ai-terminal-frame">
+      <!-- AI Sidebar -->
+      <div class="ai-sidebar">
+        <div class="ai-avatar-core">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>Probe Neural Core</h3>
+        <p>Omni multimodal assistant with voice recognition and live web search tools.</p>
+
+        <div class="ai-tools-list">
+          <div class="ai-tool-pill"><i class="fa-solid fa-cloud-sun" style="color:var(--cyan)"></i> Open-Meteo Weather</div>
+          <div class="ai-tool-pill"><i class="fa-brands fa-wikipedia-w" style="color:var(--gold)"></i> Wikipedia Knowledge</div>
+          <div class="ai-tool-pill"><i class="fa-solid fa-calculator" style="color:var(--emerald)"></i> Math Engine</div>
+          <div class="ai-tool-pill"><i class="fa-solid fa-gamepad" style="color:#ff0055"></i> BGMI Esports Coach</div>
+        </div>
+      </div>
+
+      <!-- AI Chat Stage -->
+      <div class="ai-chat-stage">
+        <div class="ai-messages-flow" id="ai-messages">
+          <!-- Initial AI Welcome -->
+          <div class="ai-bubble-row ai">
+            <div class="ai-bubble-avatar ai"><i class="fa-solid fa-brain"></i></div>
+            <div class="ai-bubble-body">
+              <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-muted); margin-bottom:4px; font-family:var(--font-mono);">
+                <strong style="color:var(--primary)">Probe GPT-4o</strong>
+                <span>Just now</span>
+              </div>
+              <div class="ai-thinking-box">
+                <i class="fa-solid fa-microchip" style="margin-right:6px"></i> Neural weights loaded. Verified channel metrics: 425 subscribers, 416 videos, 102,129 views. Web tools online.
+              </div>
+              <div>Hello champion! I am Probe GPT-4o. Ask me anything about BGMI zero-recoil sensitivity, live channel stats, weather, or competitive strategies!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Prompt Chips -->
+        <div class="ai-chips-bar">
+          <button class="ai-prompt-chip" data-prompt="Best BGMI M416 recoil sensitivity setup"><i class="fa-solid fa-crosshairs" style="color:var(--cyan); margin-right:4px;"></i> M416 Recoil Setup</button>
+          <button class="ai-prompt-chip" data-prompt="Show official channel stats for @probegaming759"><i class="fa-brands fa-youtube" style="color:#ff0055; margin-right:4px;"></i> Channel Stats</button>
+          <button class="ai-prompt-chip" data-prompt="What is 425 * 102129?"><i class="fa-solid fa-calculator" style="color:var(--emerald); margin-right:4px;"></i> Solve 425 * 102129</button>
+          <button class="ai-prompt-chip" data-prompt="Check live weather in Delhi HQ"><i class="fa-solid fa-cloud-sun" style="color:var(--gold); margin-right:4px;"></i> Delhi Weather</button>
+        </div>
+
+        <!-- Input Bar -->
+        <div class="ai-input-bar">
+          <button id="ai-mic" class="ai-btn-icon" title="Voice Speech-To-Text">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <input type="text" id="ai-input" class="ai-input-field" placeholder="Ask Probe AI anything (voice or text)...">
+          <button id="ai-send" class="ai-btn-icon" title="Send Prompt">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3D MYTHIC CRATE OPENER MINIGAME
+       ======================================================================== -->
+  <section id="crate-section">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-gem"></i> MYTHIC LOOT VAULT</span>
+      <h1 class="title">3D CRATE OPENER</h1>
+      <p class="section-desc">Spin and unlock legendary weapons, X-Suits, and rare titles with authentic drop probabilities.</p>
+    </div>
+
+    <div class="crate-interactive-box">
+      <div class="crate-stage-viewport" id="crate-stage-viewport" title="Drag to rotate in 3D! Click to open crate.">
+        <canvas id="crate-3d-canvas"></canvas>
+        <div class="crate-3d-badge"><i class="fa-solid fa-arrows-rotate"></i> DRAG 3D • CLICK OPEN</div>
+      </div>
+
+      <button id="crate-open-btn" class="btn primary" style="font-size:1.05rem; padding:16px 36px;">
+        <i class="fa-solid fa-unlock-keyhole"></i> OPEN CRATE (FREE SPIN)
+      </button>
+
+      <!-- Server Connection Badge -->
+      <div id="csharp-backend-status" class="csharp-status-badge">
+        <i class="fa-solid fa-server"></i> <span id="csharp-status-text">Connecting to C# Loot API...</span>
+      </div>
+
+      <div id="crate-reward-container" style="width:100%; display:flex; justify-content:center;"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ARMORY RECOIL LAB & TTK SIMULATOR
+       ======================================================================== -->
+  <section id="armory-section">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-crosshairs"></i> BALLISTIC PHYSICS LAB</span>
+      <h1 class="title">ARMORY RECOIL SIMULATOR</h1>
+      <p class="section-desc">Interactive bullet spray compensation canvas, modular attachment toggles, and side-by-side TTK analysis.</p>
+    </div>
+
+    <div class="armory-lab-container">
+      <div>
+        <div style="display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;">
+          <button class="btn secondary weapon-pill active" data-recoil="28">M416 (5.56mm)</button>
+          <button class="btn secondary weapon-pill" data-recoil="42">AKM (7.62mm)</button>
+          <button class="btn secondary weapon-pill" data-recoil="48">Beryl M762</button>
+          <button class="btn secondary weapon-pill" data-recoil="75">AWM (.300 Mag)</button>
+          <button class="btn secondary weapon-pill" data-recoil="18">UMP45 (.45 ACP)</button>
+        </div>
+
+        <div class="recoil-screen-frame">
+          <svg id="recoil-svg" viewBox="0 0 400 400" style="width:100%; height:100%;">
+            <!-- Static Target Rings -->
+            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4"/>
+            <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(255,255,255,0.12)"/>
+            <circle cx="200" cy="200" r="50" fill="none" stroke="rgba(0, 242, 254, 0.3)"/>
+            <circle cx="200" cy="200" r="15" fill="none" stroke="rgba(255, 0, 85, 0.6)"/>
+            <line x1="200" y1="20" x2="200" y2="380" stroke="rgba(255,255,255,0.06)"/>
+            <line x1="20" y1="200" x2="380" y2="200" stroke="rgba(255,255,255,0.06)"/>
+          </svg>
+        </div>
+
+        <div style="margin-top:16px; display:flex; justify-content:space-between; align-items:center;">
+          <button id="test-spray-btn" class="btn primary">
+            <i class="fa-solid fa-burst"></i> Fire 15-Round Spray
+          </button>
+          <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--cyan)">Gyro Pull: -28% (Compensator Active)</span>
+        </div>
+      </div>
+
+      <div style="background:var(--card-bg); padding:24px; border-radius:var(--radius-md); border:1px solid var(--card-border); display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="font-family:var(--font-display); color:#fff; font-size:1.2rem; margin:0;">C# BALLISTICS & TTK</h3>
+          <span id="weapon-csharp-tag" class="csharp-mini-tag"><i class="fa-solid fa-server"></i> C# .NET API</span>
+        </div>
+
+        <!-- Dynamic C# Weapon Specs -->
+        <div id="armory-weapon-specs" style="background:rgba(255,255,255,0.03); padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); font-family:var(--font-mono); font-size:0.75rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+            <span style="color:var(--text-dim);">Selected:</span>
+            <strong id="spec-weapon-name" style="color:var(--cyan);">M416 (Glacier Edition)</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+            <span style="color:var(--text-dim);">Caliber:</span>
+            <span id="spec-weapon-ammo" style="color:#fff;">5.56mm • 880 m/s</span>
+          </div>
+          <div style="display:flex; justify-content:space-between;">
+            <span style="color:var(--text-dim);">Skin:</span>
+            <span id="spec-weapon-skin" style="color:var(--gold);">Glacier (Lv.7 Max)</span>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05);">
+          <span>No Armor (100 HP)</span>
+          <strong id="ttk-no-armor" style="color:var(--emerald)">0.17s (3 Shots)</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05);">
+          <span>Level 1 Armor</span>
+          <strong id="ttk-lvl-1" style="color:var(--emerald)">0.26s (4 Shots)</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05);">
+          <span>Level 2 Armor (Standard)</span>
+          <strong id="ttk-lvl-2" style="color:var(--gold)">0.34s (5 Shots)</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:8px 0;">
+          <span>Level 3 Spetsnaz Military</span>
+          <strong id="ttk-lvl-3" style="color:#ff0055">0.48s (6 Shots)</strong>
+        </div>
+
+        <a href="#home" id="inspect-active-weapon-3d" class="btn secondary" style="width:100%; justify-content:center; padding:10px; font-size:0.8rem; margin-top:4px;">
+          <i class="fa-solid fa-cube" style="color:var(--cyan)"></i> Inspect 3D Hologram in Hero
+        </a>
+      </div>
+    </div>
+
+    <!-- LIVE ERANGEL AIRDROP RADAR -->
+    <div class="airdrop-radar-banner" id="airdrop-radar-banner">
+      <div class="radar-status-dot"></div>
+      <div style="flex:1;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:2px;">
+          <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--cyan); font-weight:700;"><i class="fa-solid fa-plane"></i> LIVE ERANGEL AIRDROP RADAR</span>
+          <span id="airdrop-flare-tag" style="background:#ff0055; color:#fff; font-size:0.65rem; padding:2px 6px; border-radius:4px; font-weight:700; font-family:var(--font-mono);">FLARE ACTIVE</span>
+        </div>
+        <p id="airdrop-radar-info" style="font-size:0.8rem; color:var(--text-dim); margin:0;">
+          Incoming Cargo Plane • Drop Zone: <strong style="color:#fff;" id="radar-drop-zone">Pochinki Fields</strong> • Est. Loot: <span style="color:var(--gold);" id="radar-loot-list">AWM (.300 Mag), Level 3 Helmet, Ghillie Suit</span>
+        </p>
+      </div>
+      <button id="radar-refresh-btn" class="btn secondary" style="padding:6px 14px; font-size:0.75rem;">
+        <i class="fa-solid fa-rotate"></i> Ping Radar
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       REFLEX AIM LAB ARENA
+       ======================================================================== -->
+  <section id="aim-section">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-bullseye"></i> REFLEX TESTING ARENA</span>
+      <h1 class="title">AIM REFLEX DRILL</h1>
+      <p class="section-desc">Click moving targets to measure flick accuracy, reaction latency, and competitive reflex timing.</p>
+    </div>
+
+    <div class="aim-arena-box" id="aim-arena">
+      <div style="position:absolute; top:16px; left:20px; right:20px; display:flex; justify-content:space-between; pointer-events:none; z-index:10;">
+        <div style="background:rgba(0,0,0,0.7); padding:8px 16px; border-radius:var(--radius-full); font-family:var(--font-mono); font-size:0.85rem;">
+          Score: <strong id="aim-score" style="color:var(--cyan)">0</strong> Hits
+        </div>
+        <div style="background:rgba(0,0,0,0.7); padding:8px 16px; border-radius:var(--radius-full); font-family:var(--font-mono); font-size:0.85rem;">
+          Time: <strong id="aim-time" style="color:var(--gold)">20s</strong>
+        </div>
+      </div>
+
+      <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <button id="start-aim-btn" class="btn primary" style="font-size:1.1rem; padding:16px 36px;">
+          <i class="fa-solid fa-play"></i> START 20s AIM DRILL
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       BGMI CINEMA THEATER & GOOGLE PHOTOS / WALLPAPERS VAULT
+       ======================================================================== -->
+  <section id="videos">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-photo-film"></i> MULTIMEDIA ARCHIVE</span>
+      <h1 class="title">CINEMA THEATER & PHOTO VAULT</h1>
+      <p class="section-desc">Stream 4K BGMI montages, tactical guides, and explore high-definition esports wallpapers curated from Google Photos and YouTube.</p>
+    </div>
+
+    <!-- Media Tabs (Cinema Videos / Google Photos) -->
+    <div class="media-master-tabs">
+      <button class="media-tab-btn active" data-tab="cinema"><i class="fa-solid fa-clapperboard"></i> 4K Video Theater</button>
+      <button class="media-tab-btn" data-tab="photos"><i class="fa-solid fa-images"></i> Google Photos & Wallpapers</button>
+    </div>
+
+    <!-- 1. CINEMA VIDEO THEATER VIEW -->
+    <div id="media-view-cinema" class="media-view-pane active">
+      <div class="cinema-theater-frame">
+        <div class="cinema-player-box">
+          <div class="cinema-screen" id="cinema-screen">
+            <img id="cinema-poster" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop" alt="Active Video Poster">
+            <div class="cinema-play-overlay" id="cinema-play-btn" title="Launch Cinema Player">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="cinema-live-tag"><i class="fa-solid fa-circle" style="color:#ff0055; font-size:0.6rem;"></i> 4K ULTRA HD</div>
+          </div>
+          <div class="cinema-meta-bar">
+            <div>
+              <h3 id="cinema-active-title" style="color:#fff; font-family:var(--font-display); font-size:1.15rem; margin-bottom:4px;">
+                PROBE GAMING - Road to 500 Subs Ultimate Montage
+              </h3>
+              <p id="cinema-active-desc" style="font-size:0.8rem; color:var(--text-dim); margin:0;">
+                Insane 1v4 clutch compilation, 6x M416 laser sprays, and AWM flick headshots in custom room scrims.
+              </p>
+            </div>
+            <a href="http://www.youtube.com/@probegaming759" target="_blank" rel="noreferrer" class="btn primary" style="padding:8px 18px; font-size:0.85rem; white-space:nowrap;">
+              <i class="fa-brands fa-youtube"></i> Subscribe 425
+            </a>
+          </div>
+        </div>
+
+        <!-- Cinema Playlist Sidebar -->
+        <div class="cinema-playlist-sidebar" id="cinema-playlist">
+          <div class="playlist-header"><i class="fa-solid fa-list-ol"></i> CURATED HIGHLIGHTS</div>
+
+          <div class="playlist-item active" data-video-index="0">
+            <div class="playlist-thumb">
+              <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=300&auto=format&fit=crop" alt="Montage">
+              <span class="playlist-dur">4:32</span>
+            </div>
+            <div class="playlist-info">
+              <h4>Road to 500 Subs Montage</h4>
+              <p>18.4K Views • Montages</p>
+            </div>
+          </div>
+
+          <div class="playlist-item" data-video-index="1">
+            <div class="playlist-thumb">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=300&auto=format&fit=crop" alt="Guide">
+              <span class="playlist-dur">8:15</span>
+            </div>
+            <div class="playlist-info">
+              <h4>Zero Recoil M416 Guide</h4>
+              <p>34.1K Views • Gyro ADS</p>
+            </div>
+          </div>
+
+          <div class="playlist-item" data-video-index="2">
+            <div class="playlist-thumb">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=300&auto=format&fit=crop" alt="Rank Push">
+              <span class="playlist-dur">14:50</span>
+            </div>
+            <div class="playlist-info">
+              <h4>Conqueror 22 Kills Solo vs Squad</h4>
+              <p>42.8K Views • Rank Push</p>
+            </div>
+          </div>
+
+          <div class="playlist-item" data-video-index="3">
+            <div class="playlist-thumb">
+              <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=300&auto=format&fit=crop" alt="Tournament">
+              <span class="playlist-dur">6:48</span>
+            </div>
+            <div class="playlist-info">
+              <h4>BMPS Championship Finals</h4>
+              <p>56.2K Views • Tier-1 Esports</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. GOOGLE PHOTOS & WALLPAPERS GALLERY VIEW -->
+    <div id="media-view-photos" class="media-view-pane">
+      <!-- Photo Filters -->
+      <div class="photo-filters-bar">
+        <button class="photo-filter-btn active" data-filter="all">All Photos</button>
+        <button class="photo-filter-btn" data-filter="Wallpapers">4K Wallpapers</button>
+        <button class="photo-filter-btn" data-filter="Skins">Weapon Skins</button>
+        <button class="photo-filter-btn" data-filter="Tournament">Esports Arena</button>
+      </div>
+
+      <div class="photos-masonry-grid" id="photos-grid">
+        <!-- Rendered dynamically from C# API / Local Catalog -->
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:36px;">
+      <a href="http://www.youtube.com/@probegaming759" target="_blank" rel="noreferrer" class="btn secondary">
+        <i class="fa-brands fa-youtube" style="color:#ff0055"></i> View Full 416 Videos Catalog on YouTube
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TOURNAMENT COUNTDOWN
+       ======================================================================== -->
+  <section id="tournament">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-trophy"></i> ESPORTS ARENA</span>
+      <h1 class="title">NEXT TOURNAMENT</h1>
+      <p class="section-desc">Get ready for the next custom room tournament and BGMI scrims showdown.</p>
+    </div>
+
+    <div class="countdown">
+      <div>
+        <h2 id="days">03</h2>
+        <p>Days</p>
+      </div>
+      <div>
+        <h2 id="hours">14</h2>
+        <p>Hours</p>
+      </div>
+      <div>
+        <h2 id="minutes">45</h2>
+        <p>Minutes</p>
+      </div>
+      <div>
+        <h2 id="seconds">30</h2>
+        <p>Seconds</p>
+      </div>
+    </div>
+  
+    <!-- INTERACTIVE CUSTOM SCRIMS PASS GENERATOR -->
+    <div style="max-width:800px; margin:40px auto 0; background:var(--card-bg); padding:32px; border-radius:var(--radius-lg); border:1px solid var(--card-border);">
+      <div style="text-align:center; margin-bottom:20px;">
+        <span class="section-tag"><i class="fa-solid fa-id-card"></i> INSTANT PASS CREATOR</span>
+        <h3 style="font-family:var(--font-display); font-size:1.4rem; color:#fff;">CUSTOM SCRIMS TOURNAMENT PASS</h3>
+        <p style="font-size:0.85rem; color:var(--text-dim); margin-top:4px;">Generate your verified squad credentials for the upcoming custom room match.</p>
+      </div>
+
+      <div id="scrims-pass-card" class="scrims-pass-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+          <div style="font-family:var(--font-display); font-weight:900; color:#fff; font-size:1.2rem;">PROBE GAMING SCRIMS PASS</div>
+          <span style="background:var(--primary); color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-family:var(--font-mono); font-weight:700;">TIER-1 VERIFIED</span>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-family:var(--font-mono); font-size:0.85rem;">
+          <div>PLAYER IGN: <strong id="pass-player-name" style="color:#fff;">ProbeGamer</strong></div>
+          <div>CLAN TAG: <strong id="pass-clan-tag" style="color:var(--cyan)">[PROBE-SQUAD]</strong></div>
+          <div>SLOT ALLOCATION: <strong style="color:var(--gold)">SLOT #07 (ALPHA)</strong></div>
+          <div>ROOM ID: <strong style="color:var(--emerald)">PB-759-LIVE</strong></div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <input type="text" id="scrims-ign-input" placeholder="Your In-Game Name (e.g. ProbeSlayer)" style="flex:1; min-width:200px; padding:12px 18px; border-radius:var(--radius-full); background:rgba(255,255,255,0.05); border:1px solid var(--card-border); color:#fff; outline:none; font-family:var(--font-body);">
+        <input type="text" id="scrims-tag-input" placeholder="Clan Tag (e.g. SOUL)" style="width:160px; padding:12px 18px; border-radius:var(--radius-full); background:rgba(255,255,255,0.05); border:1px solid var(--card-border); color:#fff; outline:none; font-family:var(--font-body);">
+        <button id="gen-pass-btn" class="btn primary">
+          <i class="fa-solid fa-copy"></i> Generate & Copy Pass
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================================================================
+       ABOUT SECTION
+       ======================================================================== -->
+  
+  <!-- ========================================================================
+       LIVE ESPORTS SOUNDBOARD MATRIX
+       ======================================================================== -->
+  <section id="soundboard">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-volume-high"></i> AUDIO FX MATRIX</span>
+      <h1 class="title">LIVE ESPORTS SOUNDBOARD</h1>
+      <p class="section-desc">Click any button to trigger procedural, high-octane BGMI combat sound effects generated in real-time via Web Audio API.</p>
+    </div>
+
+    <div class="soundboard-grid">
+      <div class="sound-btn" data-sfx="playHeadshot">
+        <i class="fa-solid fa-skull"></i>
+        <div class="sound-btn-title">HEADSHOT!</div>
+        <div class="sound-btn-desc">Sharp Bullet Impact</div>
+      </div>
+
+      <div class="sound-btn" data-sfx="playChickenDinner">
+        <i class="fa-solid fa-trophy"></i>
+        <div class="sound-btn-title">CHICKEN DINNER!</div>
+        <div class="sound-btn-desc">Victory Fanfare</div>
+      </div>
+
+      <div class="sound-btn" data-sfx="playHelmetClang">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div class="sound-btn-title">LVL 3 HELMET</div>
+        <div class="sound-btn-desc">Metallic Armor Ding</div>
+      </div>
+
+      <div class="sound-btn" data-sfx="playSniperBoom">
+        <i class="fa-solid fa-crosshairs"></i>
+        <div class="sound-btn-title">AWM SNIPER</div>
+        <div class="sound-btn-desc">Heavy Acoustic Blast</div>
+      </div>
+
+      <div class="sound-btn" data-sfx="playAirDropSiren">
+        <i class="fa-solid fa-parachute-box"></i>
+        <div class="sound-btn-title">AIR DROP FLARE</div>
+        <div class="sound-btn-desc">Incoming Siren Riser</div>
+      </div>
+
+      <div class="sound-btn" data-sfx="playAdrenaline">
+        <i class="fa-solid fa-syringe"></i>
+        <div class="sound-btn-title">ADRENALINE</div>
+        <div class="sound-btn-desc">Speed Boost Surge</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-address-card"></i> CHANNEL DOSSIER</span>
+      <h1 class="title">ABOUT PROBE GAMING</h1>
+    </div>
+
+    <div class="about-box">
+      <p>
+        <strong>PROBE GAMING</strong> delivers high-octane BGMI content including live streams, pro gameplay, montages, funny moments, tips, tricks, and professional tournament scrims.
+      </p>
+      <div style="margin-top:20px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-family:var(--font-mono); font-size:0.85rem; color:var(--text-dim);">
+        <span><i class="fa-solid fa-users" style="color:var(--primary)"></i> 425 Subscribers</span>
+        <span><i class="fa-solid fa-video" style="color:var(--cyan)"></i> 416 Uploads</span>
+        <span><i class="fa-solid fa-location-dot" style="color:var(--emerald)"></i> India 🇮🇳 (Phone Verified)</span>
+        <span><i class="fa-solid fa-calendar-check" style="color:var(--gold)"></i> Joined Jul 21, 2022</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TESTIMONIALS
+       ======================================================================== -->
+  <section>
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-comments"></i> COMMUNITY VOICES</span>
+      <h1 class="title">WHAT GAMERS SAY</h1>
+    </div>
+
+    <div class="testimonial">
+      <p>
+        ⭐⭐⭐⭐⭐ <br>
+        "Best BGMI creator ever! Cleanest rotations and funniest commentary. Proud member of the 425 subscriber squad!"
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT FORM
+       ======================================================================== -->
+  <section id="contact">
+    <div class="title-box">
+      <span class="section-tag"><i class="fa-solid fa-envelope"></i> GET IN TOUCH</span>
+      <h1 class="title">CONTACT PROBE GAMING</h1>
+      <p class="section-desc">For tournament scrims collaborations, clan recruitment, or business inquiries.</p>
+    </div>
+
+    <form class="contact">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit" class="btn primary" style="align-self:flex-start;">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer>
+    <div class="footer-logo">PROBE GAMING</div>
+    <p>© 2026 PROBE GAMING (@probegaming759). All Rights Reserved.</p>
+    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-dim)">
+      Official Channel: <a href="http://www.youtube.com/@probegaming759" target="_blank" rel="noreferrer" style="color:var(--primary)">youtube.com/@probegaming759</a>
+    </p>
+  </footer>
+
+  <!-- ========================================================================
+       VIDEO POPUP MODAL
+       ======================================================================== -->
+  <div id="popup">
+    <div class="popup-content">
+      <span id="close">✕</span>
+      <iframe src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       GOOGLE PHOTOS & WALLPAPER FULLSCREEN LIGHTBOX MODAL
+       ======================================================================== -->
+  <div id="photo-lightbox" class="photo-lightbox-modal">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-dialog">
+      <button id="lightbox-close" class="lightbox-close-btn" title="Close Lightbox">✕</button>
+      <div class="lightbox-media-wrap">
+        <img id="lightbox-img" src="" alt="Enlarged Photo">
+      </div>
+      <div class="lightbox-footer">
+        <div>
+          <h3 id="lightbox-title" style="color:#fff; font-family:var(--font-display); font-size:1.2rem; margin-bottom:4px;">Photo Title</h3>
+          <span id="lightbox-badge" style="background:var(--primary); color:#fff; padding:3px 10px; border-radius:9999px; font-size:0.75rem; font-family:var(--font-mono);">4K UHD</span>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <a id="lightbox-download-btn" href="#" target="_blank" download class="btn primary" style="padding:8px 16px; font-size:0.8rem;">
+            <i class="fa-solid fa-download"></i> Download Full Res
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+
+  <!-- FLOATING CYBER THEME SWITCHER DOCK -->
+  <div class="theme-dock" title="Switch Theme Color Palette">
+    <span class="theme-dock-label"><i class="fa-solid fa-palette"></i> THEME:</span>
+    <div class="theme-dot theme-crimson active" data-theme="crimson" title="Crimson Cyber"></div>
+    <div class="theme-dot theme-cyan" data-theme="cyan" title="Electric Cyan"></div>
+    <div class="theme-dot theme-purple" data-theme="purple" title="Synthwave Purple"></div>
+    <div class="theme-dot theme-emerald" data-theme="emerald" title="Toxic Venom"></div>
+  </div>
+
+  <!-- FLOATING SCROLL TO TOP ROCKET -->
+  <div id="scroll-top-rocket" class="scroll-top-rocket" title="Rocket to Top">
+    <i class="fa-solid fa-rocket"></i>
+  </div>
+
+</body>
+
+</html>
